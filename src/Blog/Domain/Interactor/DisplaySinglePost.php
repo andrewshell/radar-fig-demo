@@ -13,12 +13,12 @@ class DisplaySinglePost
         $this->postGateway = $postGateway;
     }
 
-    public function __invoke(array $input)
+    public function __invoke($id)
     {
         try {
             return [
                 'success' => true,
-                'post' => $this->postGateway->getPostById($input['id']),
+                'post' => $this->postGateway->getPostById($id),
             ];
         } catch (Exception $e) {
             return [

@@ -3,6 +3,7 @@ namespace Blog\Domain\Interactor;
 
 use Blog\Domain\Gateway\Post as PostGateway;
 use Blog\Domain\Entity\Post as PostEntity;
+use Blog\Domain\Interactor\CreateNewPost\Request as CreateNewPostRequest;
 
 class CreateNewPost
 {
@@ -13,9 +14,13 @@ class CreateNewPost
         $this->postGateway = $postGateway;
     }
 
-    public function __invoke(array $input)
+    public function __invoke(CreateNewPostRequest $request)
     {
-        $post = new PostEntity($input['title'], $input['content'], $input['excerpt']);
+        $post = new PostEntity(
+            $request->getTitle(),
+            $request->getContent(),
+            $request->getExcerpt()
+        );
         $this->postGateway->savePost($post);
         return ['success' => true];
     }

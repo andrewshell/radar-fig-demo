@@ -50,7 +50,7 @@ class Config extends ContainerConfig
         /**
          * Setup
          */
-        $adr->input('Blog\Delivery\Input');
+        $adr->input('Blog\Delivery\Input\MergedArray');
         $adr->responder('Blog\Delivery\Responder\Html');
 
         /**
@@ -68,12 +68,15 @@ class Config extends ContainerConfig
          * Routing
          */
         $adr->get('ListAllPosts', '/', 'Blog\Domain\Interactor\ListAllPosts')
+            ->input('Blog\Delivery\Input\NoneExpected')
             ->defaults(['_view' => 'listposts.html.php']);
 
         $adr->get('DisplaySinglePost', '/{id}/', 'Blog\Domain\Interactor\DisplaySinglePost')
+            ->input('Blog\Delivery\Input\IdOnly')
             ->defaults(['_view' => 'singlepost.html.php']);
 
         $adr->post('CreateNewPost', '/', 'Blog\Domain\Interactor\CreateNewPost')
+            ->input('Blog\Delivery\Input\CreateNewPost')
             ->responder('Blog\Delivery\Responder\Redirect');
     }
 }
