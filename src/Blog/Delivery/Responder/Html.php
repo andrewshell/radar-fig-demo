@@ -3,9 +3,8 @@ namespace Blog\Delivery\Responder;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
-use Radar\Adr\Responder\ResponderAcceptsInterface;
 
-class Html implements ResponderAcceptsInterface
+class Html
 {
     protected $request;
 
@@ -16,11 +15,6 @@ class Html implements ResponderAcceptsInterface
     public function __construct($viewDir)
     {
         $this->viewDir = $viewDir;
-    }
-
-    public static function accepts()
-    {
-        return ['text/html'];
     }
 
     public function __invoke(

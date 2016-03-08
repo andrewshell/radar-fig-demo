@@ -3,7 +3,6 @@ namespace Blog\Delivery\Responder;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
-use Radar\Adr\Responder\ResponderAcceptsInterface;
 
 class Redirect extends Html
 {
