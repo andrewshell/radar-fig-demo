@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/arbiterphp/Arbiter.Arbiter.git",
-                "reference": "8deb1bb91bc62d604b106deea2b20fd479c076d1"
+                "reference": "6e3501a0ce00aec75dfbd0ab74707e746d048978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/arbiterphp/Arbiter.Arbiter/zipball/8deb1bb91bc62d604b106deea2b20fd479c076d1",
-                "reference": "8deb1bb91bc62d604b106deea2b20fd479c076d1",
+                "url": "https://api.github.com/repos/arbiterphp/Arbiter.Arbiter/zipball/6e3501a0ce00aec75dfbd0ab74707e746d048978",
+                "reference": "6e3501a0ce00aec75dfbd0ab74707e746d048978",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2015-06-25 14:21:40"
+            "time": "2016-03-27 17:17:32"
         },
         {
             "name": "aura/di",
@@ -60,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Di.git",
-                "reference": "77306539be4ceca3c36537d9f0f47764f4a27700"
+                "reference": "518bd230dc0246ab5491299f1a4f8d90c36fd670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/77306539be4ceca3c36537d9f0f47764f4a27700",
-                "reference": "77306539be4ceca3c36537d9f0f47764f4a27700",
+                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/518bd230dc0246ab5491299f1a4f8d90c36fd670",
+                "reference": "518bd230dc0246ab5491299f1a4f8d90c36fd670",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "di",
                 "di container"
             ],
-            "time": "2016-01-04 15:22:30"
+            "time": "2016-03-23 15:13:49"
         },
         {
             "name": "aura/payload",
@@ -194,12 +194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Router.git",
-                "reference": "aeb49c8903cb07561022e2b65ef16c68fd2c01da"
+                "reference": "0ac26579f3d3a584ea0c7f5ceaef83ef3be0cf3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/aeb49c8903cb07561022e2b65ef16c68fd2c01da",
-                "reference": "aeb49c8903cb07561022e2b65ef16c68fd2c01da",
+                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/0ac26579f3d3a584ea0c7f5ceaef83ef3be0cf3f",
+                "reference": "0ac26579f3d3a584ea0c7f5ceaef83ef3be0cf3f",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2015-12-01 15:31:40"
+            "time": "2016-03-26 13:23:51"
         },
         {
             "name": "container-interop/container-interop",
@@ -365,12 +365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/radarphp/Radar.Adr.git",
-                "reference": "6d7e3beb2afe8cb4f89ec7a3eca62053538263fa"
+                "reference": "0f0ee20f51f3b12b00e35be7eb75f915d425cff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/radarphp/Radar.Adr/zipball/6d7e3beb2afe8cb4f89ec7a3eca62053538263fa",
-                "reference": "6d7e3beb2afe8cb4f89ec7a3eca62053538263fa",
+                "url": "https://api.github.com/repos/radarphp/Radar.Adr/zipball/0f0ee20f51f3b12b00e35be7eb75f915d425cff0",
+                "reference": "0f0ee20f51f3b12b00e35be7eb75f915d425cff0",
                 "shasum": ""
             },
             "require": {
@@ -396,7 +396,7 @@
             ],
             "description": "The Action-Domain-Responder core library for Radar.",
             "homepage": "https://github.com/radarphp/Radar.Adr",
-            "time": "2016-01-20 17:15:26"
+            "time": "2016-04-05 15:57:58"
         },
         {
             "name": "relay/middleware",
@@ -404,12 +404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/relayphp/Relay.Middleware.git",
-                "reference": "fb05e7bbf73b49f71700e17c6966b0d289e9fc3d"
+                "reference": "62d1ae95fa390705fc569e3b6c24317fcd63203d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/relayphp/Relay.Middleware/zipball/fb05e7bbf73b49f71700e17c6966b0d289e9fc3d",
-                "reference": "fb05e7bbf73b49f71700e17c6966b0d289e9fc3d",
+                "url": "https://api.github.com/repos/relayphp/Relay.Middleware/zipball/62d1ae95fa390705fc569e3b6c24317fcd63203d",
+                "reference": "62d1ae95fa390705fc569e3b6c24317fcd63203d",
                 "shasum": ""
             },
             "require": {
@@ -428,9 +428,9 @@
             "license": [
                 "MIT"
             ],
-            "description": "Basic Relay-compatible middleware decorators.",
+            "description": "Relay-compatible middleware decorators.",
             "homepage": "https://github.com/relayphp/Relay.Middleware",
-            "time": "2016-01-25 22:54:13"
+            "time": "2016-03-01 15:27:14"
         },
         {
             "name": "relay/relay",
@@ -483,16 +483,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "c866b82a964a82aaa40b971fd344f882ca9b92d9"
+                "reference": "18182f681370cbd23fec64dbec8275a376bf4b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/c866b82a964a82aaa40b971fd344f882ca9b92d9",
-                "reference": "c866b82a964a82aaa40b971fd344f882ca9b92d9",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/18182f681370cbd23fec64dbec8275a376bf4b66",
+                "reference": "18182f681370cbd23fec64dbec8275a376bf4b66",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4",
+                "php": "^5.4 || ^7.0",
                 "psr/http-message": "~1.0"
             },
             "provide": {
@@ -525,7 +525,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2016-01-04 21:39:41"
+            "time": "2016-03-17 18:05:07"
         }
     ],
     "packages-dev": [],
