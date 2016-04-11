@@ -13,9 +13,9 @@ class Config extends ContainerConfig
 {
     public function define(Container $di)
     {
-        // $di->set('blog/domain:postGateway', $di->lazyNew('Blog\Data\Gateway\PostMemory'));
-        $di->set('blog/domain:postGateway', $di->lazyNew('Blog\Data\Gateway\PostSqlite'));
-        $di->set('dbh', $di->lazyNew('PDO'));
+        $di->set('blog/domain:postGateway', $di->lazyNew('Blog\Data\Gateway\PostMemory'));
+        // $di->set('blog/domain:postGateway', $di->lazyNew('Blog\Data\Gateway\PostSqlite'));
+        // $di->set('dbh', $di->lazyNew('PDO'));
 
         if (!file_exists(__DIR__ . '/../../../data')) {
             mkdir(__DIR__ . '/../../../data');
@@ -56,13 +56,13 @@ class Config extends ContainerConfig
         /**
          * Data
          */
-        // $postGateway = $di->get('blog/domain:postGateway');
-        // $postGateway->savePost(new PostEntity('Sample Post 1', 'This is the first sample post.', '', '1'));
-        // $postGateway->savePost(new PostEntity('Sample Post 2', 'This is the second sample post.', '', '2'));
-        // $postGateway->savePost(new PostEntity('Sample Post 3', 'This is the third sample post.', '', '3'));
+        $postGateway = $di->get('blog/domain:postGateway');
+        $postGateway->savePost(new PostEntity('Sample Post 1', 'This is the first sample post.', '', '1'));
+        $postGateway->savePost(new PostEntity('Sample Post 2', 'This is the second sample post.', '', '2'));
+        $postGateway->savePost(new PostEntity('Sample Post 3', 'This is the third sample post.', '', '3'));
 
-        $dbh = $di->get('dbh');
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // $dbh = $di->get('dbh');
+        // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         /**
          * Routing
